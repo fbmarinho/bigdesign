@@ -249,7 +249,7 @@
     Kirki::add_field( 'theme_config_id', [
         'type'        => 'multicolor',
         'settings'    => 'menu_item_setting',
-        'label'       => esc_html__( 'Label', 'kirki' ),
+        'label'       => 'Links do Menu',
         'section'     => 'menu',
         'priority'    => 10,
         'choices'     => [
@@ -261,24 +261,7 @@
             'link'    => '#0088cc',
             'hover'   => '#00aaff',
             'active'  => '#00ffff',
-        ],
-        'output'    => array(
-            array(
-              'choice'    => 'link',
-              'element'   => '.link',
-              'property'  => 'color',
-            ),
-            array(
-              'choice'    => 'hover',
-              'element'   => '.link:hover',
-              'property'  => 'color',
-            ),
-            array(
-                'choice'    => 'active',
-                'element'   => '.link:active',
-                'property'  => 'color',
-              ),
-        )
+        ]
     ] );
 
 ?>

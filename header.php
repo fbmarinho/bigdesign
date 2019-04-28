@@ -11,13 +11,28 @@
 <body>
 <div class="header">
     <div class="header-content">
-            <div class="logo"></div>
+            <a href="<?php echo home_url( '/' ) ?>"><div class="logo"></div></a>
             <div class="header-text">
                 <div class="header-title"><?php echo get_theme_mod( 'header_title', 'Título') ?></div>
                 <div class="header-subtitle"><?php echo get_theme_mod( 'header_subtitle', 'Subtítulo') ?></div>
             </div>
     </div>
 </div>
+
+
+<?php
+$defaults = array(
+	'link'   => '#0088cc',
+	'hover'  => '#00aaff',
+	'active' => '#00ffff',
+);
+$value = get_theme_mod( 'menu_item_setting', $defaults );
+
+echo '<style>';
+echo '.link { color: ' . $value['link'] . '; }';
+echo '.link:hover { color: ' . $value['hover'] . '; }';
+echo '.link:visited { color: ' . $value['active'] . '; }';
+echo '</style>'; ?>
 
 <div class="menu">
     <ul>
@@ -27,6 +42,8 @@
         <li class='menu-item'><a class='link' href="<?php echo home_url( '/contato/' ); ?>">Contato</a></li>
     </ul>
 </div>
+
+
 
 <div class="conteudo">
     

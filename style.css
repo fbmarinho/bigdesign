@@ -58,11 +58,6 @@ body {
     text-decoration: none;
 }
 
-.menu a:hover{
-    color: rgb(0, 238, 255);
-    text-decoration: none;
-}
-
 .conteudo {
     width: 100vw;
     min-height: 60vh;
