@@ -65,11 +65,12 @@ body {
 
 .conteudo {
     width: 100vw;
-    height: 60vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top; 
     align-items: center;
+    
 }
 
 .rodape {
@@ -81,4 +82,23 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+.frontpost{
+    padding: 30px;
+    width: 80vw;
+    text-align: justify
+    /* border: solid 1px black; */
+}
+
+.mainpost {
+    padding: 30px;
+    width: 80vw;
+    text-align: justify
+    /* border: solid 1px black; */
+}
+
+.thumb{
+    width: 20px;
+
 }

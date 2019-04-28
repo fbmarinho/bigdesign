@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="conteudo">
+
 <?php 
     if ( have_posts() ) :  
         while ( have_posts() ) : the_post();       
@@ -8,7 +8,7 @@
         endwhile;
     endif; //ends the loop
  ?>
-</div>
+
 
 
 

@@ -1,4 +1,10 @@
 <?php 
+    // Adiciona imagens destacadas
+    add_theme_support( 'post-thumbnails' );
+    add_image_size( 'thumb-custom', 200, 200, true );
+
+
+
     include_once( dirname( __FILE__ ) . '/inc/kirki/kirki.php' );
     
     Kirki::add_config( 'theme_config_id', array(

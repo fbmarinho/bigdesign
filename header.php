@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php echo wp_title(); ?></title>
+    <title><?php echo bloginfo( 'title' ); ?></title>
     <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' );?>">
     <?php wp_head(); ?>
 </head>
@@ -27,4 +27,6 @@
         <li class='menu-item'><a class='link' href="<?php echo home_url( '/contato/' ); ?>">Contato</a></li>
     </ul>
 </div>
+
+<div class="conteudo">
     
